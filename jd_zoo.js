@@ -889,7 +889,7 @@ function getAuthorShareCode(url = "http://cdn.annnibb.me/eb6fdc36b281b7d5eabf333
       "timeout": 10000,
       "headers": {
         "User-Agent": $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;10.0.2;14.6;d78d07804389c8c3fc665dee8cf64b4c4d8e38e0;network/wifi;model/iPhone13,4;addressid/574042655;appBuild/167694;jdSupportDarkMode/0;Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1")
-    };
+    }
     if ($.isNode() && process.env.TG_PROXY_HOST && process.env.TG_PROXY_PORT) {
       const tunnel = require("tunnel");
       const agent = {
